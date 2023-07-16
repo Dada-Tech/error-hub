@@ -7,5 +7,6 @@ module.exports = {
     plugins: ['stylelint-order', 'stylelint-scss'],
     rules: {
         // Add specific Stylelint rules if needed
+        "no-console": [0],
     },
 };
