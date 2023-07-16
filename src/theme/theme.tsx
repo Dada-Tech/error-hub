@@ -1,12 +1,10 @@
 import { createGlobalStyle } from 'styled-components';
-// import { secondFrameStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
   body {
-    // font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: white;
-    // font-size: 17px;
-    // font-weight: 700;
+    font-size: 17px;
     background: #0089ED;
   }
 `;
