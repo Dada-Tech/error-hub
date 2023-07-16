@@ -8,5 +8,6 @@ module.exports = {
     ],
     rules: {
         // Add specific ESLint rules if needed
+        "no-console": [0],
     },
 };
