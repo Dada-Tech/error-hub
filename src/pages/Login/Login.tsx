@@ -1,11 +1,11 @@
 import React from 'react';
 import classes from './Login.module.scss';
 
-const Login: React.FC = () => {
+
+function Login () {
     return (
         <>
-            <div className={classes.header}> Hello World </div>
-            <h1> Kick Back</h1>
+            <div className={classes.header}> Welcome to ErrorHub</div>
         </>
     );
 }
