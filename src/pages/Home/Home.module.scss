@@ -1,0 +1,117 @@
+.header {
+  position: absolute;
+  width: 204px;
+  height: 79px;
+  left: 68px;
+  top: 0px;
+
+  font-family: 'Saira SemiCondensed', serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 79px;
+  /* identical to box height */
+
+  color: #00204A;
+}
+
+.typography {
+  /* h6 */
+  width: 216px;
+  height: 83px;
+
+  font-family: 'Poppins', serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 51px;
+
+  /* Default/Secondary */
+  color: #FFFFFF;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  position: absolute;
+  left: 73px;
+  top: 64px;
+  text-transform: capitalize;
+}
+
+.typography2 {
+  /* <Typography> */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  position: absolute;
+  width: 329px;
+  height: 115px;
+  left: 75px;
+  top: 259px;
+
+
+
+  /* h6 */
+
+  width: 329px;
+  height: 115px;
+
+  /* Description text */
+  font-family: 'Poppins', serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 20px;
+
+  /* Default/Secondary */
+  color: #FFFFFF;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 1;
+}
+
+.searchbar {
+  position: absolute;
+  top: 371px;
+  left: 384px;
+
+  font-family: 'Poppins', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  //align-items: center;
+  text-transform: capitalize;
+
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+
+  width: 610px;
+  height: 64px;
+
+}
+
+.searchBarText {
+  background: #FFFFFF;
+  border-radius: 13px;
+}
