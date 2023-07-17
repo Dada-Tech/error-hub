@@ -3,3 +3,4 @@ ok
 # dependencies
 /node_modules
 /.idea
+/node_modules/.cache/default-development
