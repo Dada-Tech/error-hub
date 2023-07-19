@@ -108,10 +108,23 @@
 
   width: 610px;
   height: 64px;
-
+  //background: #FFFFFF;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
 .searchBarText {
-  background: #FFFFFF;
+  //background: #FFFFFF;
   border-radius: 13px;
+}
+
+.sallyImg {
+  position: absolute;
+  left: 24.24%;
+  right: 49.03%;
+  top: 2.34%;
+  bottom: 60.06%;
+  width: 385px;
+  height: 385px;
 }
