@@ -4,7 +4,7 @@ import { GlobalStyle } from '../../theme/theme';
 import Autocomplete from "@mui/material/Autocomplete";
 import TextField from "@mui/material/TextField";
 // import { options } from '../../components/Buttons/Autocomplete'
-
+import sallyImg from "../../components/Images/Saly-1.png"
 
 function Home () {
     const top100Books = [
@@ -30,11 +30,11 @@ function Home () {
                     the book. These reports will be uploaded to
                     a database.
                 </p>
+                <img className={classes.sallyImg} src={sallyImg} alt="sallyImg" />
             <Autocomplete
                 disablePortal
                 className={classes.searchbar}
                 options={top100Books}
-                // sx={{ width: 300 }}
                 renderInput={(params) => <TextField className={classes.searchBarText} {...params} label="Search For A Book Title" />}
             />
         </>
