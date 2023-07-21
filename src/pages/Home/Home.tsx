@@ -4,7 +4,9 @@ import { GlobalStyle } from '../../theme/theme';
 import Autocomplete from "@mui/material/Autocomplete";
 import TextField from "@mui/material/TextField";
 // import { options } from '../../components/Buttons/Autocomplete'
-import sallyImg from "../../components/Images/Saly-1.png"
+import sallyImg from "../../components/Images/Saly-1.png";
+import '../../styles.module.css';
+import errohublogo from "../../components/Images/errohublogo.png";
 
 function Home () {
     const top100Books = [
@@ -21,7 +23,11 @@ function Home () {
     return (
         <>
             <GlobalStyle/>
+            {/*<div className={classes.logoheader}>*/}
+                <img className={classes.errorhublogo} src={errohublogo} alt="errohublogo"/>
                 <div className={classes.header}> ErrorHub </div>
+            {/*<div/>*/}
+
                 <p className={classes.typography}> welcome to errorhub</p>
                 <p className={classes.typography2}>
                     An application in which users
@@ -30,7 +36,9 @@ function Home () {
                     the book. These reports will be uploaded to
                     a database.
                 </p>
-                <img className={classes.sallyImg} src={sallyImg} alt="sallyImg" />
+
+            <img className={classes.sallyImg} src={sallyImg} alt="sallyImg" />
+
             <Autocomplete
                 disablePortal
                 className={classes.searchbar}
