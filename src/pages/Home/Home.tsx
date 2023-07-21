@@ -3,9 +3,7 @@ import classes from './Home.module.scss';
 import { GlobalStyle } from '../../theme/theme';
 import Autocomplete from "@mui/material/Autocomplete";
 import TextField from "@mui/material/TextField";
-// import { options } from '../../components/Buttons/Autocomplete'
 import sallyImg from "../../components/Images/Saly-1.png";
-import '../../styles.module.css';
 import errohublogo from "../../components/Images/errohublogo.png";
 
 function Home () {
@@ -25,7 +23,7 @@ function Home () {
             <GlobalStyle/>
             {/*<div className={classes.logoheader}>*/}
                 <img className={classes.errorhublogo} src={errohublogo} alt="errohublogo"/>
-                <div className={classes.header}> ErrorHub </div>
+                <div className="text-3xl text-secondBlack font-serif"> ErrorHub </div>
             {/*<div/>*/}
 
                 <p className={classes.typography}> welcome to errorhub</p>
