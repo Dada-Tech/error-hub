@@ -1,18 +1,31 @@
-.header {
+.errorhublogo {
+  background-color: transparent;
+  height: 56px;
+  left: 0px;
   position: absolute;
-  width: 204px;
-  height: 79px;
-  left: 68px;
-  top: 0px;
+  top: 16px;
+  width: 59px;
+}
 
-  font-family: 'Saira SemiCondensed', serif;
+.header {
+  //ackground-color: transparent;
+  color: #00204a;
+  font-family: var(--font-family-saira_semicondensed-semibold);
+  font-size: 50px;
   font-style: normal;
   font-weight: 600;
-  font-size: 50px;
-  line-height: 79px;
+  height: auto;
+  left: 68px;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: -1px;
+  width: auto;
   /* identical to box height */
 
-  color: #00204A;
+  //color: #00204A;
 }
 
 .typography {
@@ -39,7 +52,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px;
+  //padding: 0px;
 
   position: absolute;
   left: 73px;
@@ -54,7 +67,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px;
+  //padding: 0px;
 
   position: absolute;
   width: 329px;
@@ -66,8 +79,8 @@
 
   /* h6 */
 
-  width: 329px;
-  height: 115px;
+  //width: 329px;
+  //height: 115px;
 
   /* Description text */
   font-family: 'Poppins', serif;
@@ -103,7 +116,7 @@
 
   flex-direction: row;
   align-items: flex-start;
-  padding: 0px;
+  //padding: 0px;
   gap: 8px;
 
   width: 610px;
