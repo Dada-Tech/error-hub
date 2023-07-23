@@ -6,7 +6,5 @@ module.exports = {
     ],
     plugins: ['stylelint-order', 'stylelint-scss'],
     rules: {
-        // Add specific Stylelint rules if needed
-        'scss/at-rule-no-unknown': [true, { ignoreAtRules: ['tailwind'] }],
     },
 };
