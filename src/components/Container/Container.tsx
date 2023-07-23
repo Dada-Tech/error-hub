@@ -3,8 +3,8 @@ import { Box } from '@mui/material';
 
 function Container() {
   return (
-    <Box
-      sx={{
+      <Box
+          sx={{
         width: '1744px',
         height: '582px',
         backgroundColor: '#ffffff', // White background color
@@ -15,9 +15,9 @@ function Container() {
         right: '0',
         mx: 'auto',
       }}
-    >
-      {/* Content of the container goes here */}
-    </Box>
+      >
+          {/* Content of the container goes here */}
+      </Box>
   );
 }
 
