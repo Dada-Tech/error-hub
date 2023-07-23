@@ -21,11 +21,9 @@
   text-align: left;
   top: -1px;
   width: auto;
-  /* identical to box height */
 }
 
 .typography {
-  /* h6 */
   width: 216px;
   height: 83px;
   font-family: Poppins, serif;
@@ -33,10 +31,7 @@
   font-weight: 600;
   font-size: 34px;
   line-height: 51px;
-  /* Default/Secondary */
   color: #FFF;
-  /* Inside auto layout */
-  /* Auto layout */
   position: absolute;
   left: 73px;
   top: 150px;
@@ -44,8 +39,6 @@
 }
 
 .typography2 {
-  /* <Typography> */
-  /* Auto layout */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -54,16 +47,12 @@
   height: 115px;
   left: 75px;
   top: 259px;
-  /* h6 */
-  /* Description text */
   font-family: Poppins, serif;
   font-style: normal;
   font-weight: 300;
   font-size: 13px;
   line-height: 20px;
-  /* Default/Secondary */
   color: #FFF;
-  /* Inside auto layout */
   flex: none;
   order: 0;
   align-self: stretch;
