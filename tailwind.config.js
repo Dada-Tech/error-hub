@@ -5,11 +5,10 @@ module.exports = {
   ],
 
   theme: {
-
     screens: {
       sm: '480px',
       md: '768px',
-      lg: '976px',
+      lg: '1024px',
       xl: '1440px',
     },
 
@@ -19,12 +18,22 @@ module.exports = {
       'lightgray': '#8D8D8D',
       'black': '#000000',
       'secondBlack': '#00204A',
+    },
+
+    container: {
+      padding: {
+        DEFAULT: '1rem',
+        sm: '2rem',
+        lg: '4rem',
+        xl: '5rem',
+        '2xl': '6rem',
+      }
     }
   },
 
   fontFamily: {
-    sans: ['Poppins', 'sans-serif'],
-    serif: ['Saira SemiCondensed','serif'],
+    poppins: ['"Poppins"', 'sans-serif'],
+    saira: ['"Saira SemiCondensed"', 'serif'],
   },
 
   plugins: [
@@ -32,4 +41,3 @@ module.exports = {
     require('autoprefixer'),
   ],
 }
-

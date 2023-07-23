@@ -10,5 +10,5 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 export {
-    GlobalStyle
+  GlobalStyle,
 };
