@@ -1,0 +1,105 @@
+.errorhublogo {
+  background-color: transparent;
+  height: 56px;
+  left: 0;
+  position: absolute;
+  top: 16px;
+  width: 59px;
+}
+
+.header {
+  color: #00204a;
+  font-family: "Saira SemiCondensed", serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  height: auto;
+  left: 68px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: -1px;
+  width: auto;
+  /* identical to box height */
+}
+
+.typography {
+  /* h6 */
+  width: 216px;
+  height: 83px;
+  font-family: Poppins, serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 51px;
+  /* Default/Secondary */
+  color: #FFF;
+  /* Inside auto layout */
+  /* Auto layout */
+  position: absolute;
+  left: 73px;
+  top: 150px;
+  text-transform: capitalize;
+}
+
+.typography2 {
+  /* <Typography> */
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  width: 329px;
+  height: 115px;
+  left: 75px;
+  top: 259px;
+  /* h6 */
+  /* Description text */
+  font-family: Poppins, serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 20px;
+  /* Default/Secondary */
+  color: #FFF;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 1;
+}
+
+.searchbar {
+  position: absolute;
+  top: 371px;
+  left: 384px;
+  font-family: Poppins, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  text-transform: capitalize;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 8px;
+  width: 610px;
+  height: 64px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.searchbartext {
+  border-radius: 13px;
+}
+
+.sallyimg {
+  position: absolute;
+  inset: 2.34% 49.03% 60.06% 24.24%;
+  width: 385px;
+  height: 385px;
+}
+
+/*# sourceMappingURL=Home.module.css.map */
