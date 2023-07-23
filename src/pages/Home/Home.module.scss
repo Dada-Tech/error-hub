@@ -1,28 +1,29 @@
 .errorhublogo {
   background-color: transparent;
   height: 56px;
-  left: 0px;
+  left: 0;
   position: absolute;
   top: 16px;
   width: 59px;
 }
 
 .header {
-  //ackground-color: transparent;
+  //background-color: transparent;
   color: #00204a;
-  font-family: var(--font-family-saira_semicondensed-semibold);
+  font-family: "Saira SemiCondensed", serif;
   font-size: 50px;
   font-style: normal;
   font-weight: 600;
   height: auto;
   left: 68px;
-  letter-spacing: 0.00px;
+  //letter-spacing: 0.00;
   line-height: normal;
   mix-blend-mode: normal;
   position: absolute;
   text-align: left;
   top: -1px;
   width: auto;
+
   /* identical to box height */
 
   //color: #00204A;
@@ -32,31 +33,30 @@
   /* h6 */
   width: 216px;
   height: 83px;
-
-  font-family: 'Poppins', serif;
+  font-family: Poppins, serif;
   font-style: normal;
   font-weight: 600;
   font-size: 34px;
   line-height: 51px;
 
   /* Default/Secondary */
-  color: #FFFFFF;
+  color: #FFF;
 
 
   /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+  //flex: none;
+  //order: 0;
+  //flex-grow: 0;
 
   /* Auto layout */
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  //display: flex;
+  //flex-direction: column;
+  //align-items: flex-start;
   //padding: 0px;
 
   position: absolute;
   left: 73px;
-  top: 64px;
+  top: 150px;
   text-transform: capitalize;
 }
 
@@ -83,14 +83,14 @@
   //height: 115px;
 
   /* Description text */
-  font-family: 'Poppins', serif;
+  font-family: Poppins, serif;
   font-style: normal;
   font-weight: 300;
   font-size: 13px;
   line-height: 20px;
 
   /* Default/Secondary */
-  color: #FFFFFF;
+  color: #FFF;
 
 
   /* Inside auto layout */
@@ -104,8 +104,7 @@
   position: absolute;
   top: 371px;
   left: 384px;
-
-  font-family: 'Poppins', serif;
+  font-family: Poppins, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -113,12 +112,10 @@
   display: flex;
   //align-items: center;
   text-transform: capitalize;
-
   flex-direction: row;
   align-items: flex-start;
   //padding: 0px;
   gap: 8px;
-
   width: 610px;
   height: 64px;
   //background: #FFFFFF;
@@ -127,17 +124,14 @@
   flex-grow: 0;
 }
 
-.searchBarText {
+.searchbartext {
   //background: #FFFFFF;
   border-radius: 13px;
 }
 
-.sallyImg {
+.sallyimg {
   position: absolute;
-  left: 24.24%;
-  right: 49.03%;
-  top: 2.34%;
-  bottom: 60.06%;
+  inset: 2.34% 49.03% 60.06% 24.24%;
   width: 385px;
   height: 385px;
 }
