@@ -23,6 +23,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.14.1",
     "react-scripts": "5.0.1",
+    "run": "^1.4.0",
     "sass": "^1.63.6",
     "styled-components": "^6.0.3",
     "tailwindcss": "^3.3.3",
@@ -33,7 +34,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint-fix:ts": "eslint 'src/**/*.ts' 'src/**/*.tsx' --fix",
+    "lint-fix:scss": "npx stylelint '**/*.scss' --fix"
   },
   "eslintConfig": {
     "extends": [
@@ -55,6 +58,10 @@
   },
   "devDependencies": {
     "components": "^0.1.0",
-    "eslint-config-airbnb": "^19.0.4"
+    "stylelint": "^15.10.2",
+    "stylelint-config-recommended": "^13.0.0",
+    "stylelint-config-standard": "^34.0.0",
+    "stylelint-config-standard-scss": "^10.0.0",
+    "stylelint-order": "^6.0.3"
   }
 }
