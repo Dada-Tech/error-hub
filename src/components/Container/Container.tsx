@@ -7,7 +7,7 @@ function Container() {
           sx={{
         width: '1744px',
         height: '582px',
-        backgroundColor: '#ffffff', // White background color
+        backgroundColor: '#ffffff',
         position: 'fixed',
         top: '422px',
         bottom: '0',
