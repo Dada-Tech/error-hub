@@ -4,13 +4,11 @@ import TextField from '@mui/material/TextField';
 import classes from './Home.module.scss';
 import { GlobalStyle } from '../../theme/theme';
 import sallyImg from '../../components/Images/Saly-1.png';
-// import errohublogo from '../../components/Images/errohublogo.png';
-// import Container from '@mui/material/Container';
 import Container from '../../components/Container/Container';
 import LogoandName from "../../components/LogoandName/LogoandName";
 
 function Home() {
-  const top100Books = [
+  const listofBooks = [
     { label: 'To Kill a Mockingbird', id: 1 },
     { label: 'Brave New World', id: 2 },
     { label: 'The Grapes of Wrath', id: 3 },
@@ -25,7 +23,7 @@ function Home() {
     <>
       <GlobalStyle />
         <Container />
-        <LogoandName/>
+        <LogoandName />
          {/*<div className={classes.logoheader}/>*/}
       {/*<img className={classes.errorhublogo} src={errohublogo} alt="errohublogo" />*/}
       {/*<div className="absolute w-204 h-79 left-68 top-0 text-secondBlack font-saira font-semibold text-5xl leading-79"> Error-Hub </div>*/}
@@ -44,7 +42,7 @@ function Home() {
       <Autocomplete
         disablePortal
         className={classes.searchbar}
-        options={top100Books}
+        options={listofBooks}
         renderInput={(params) => <TextField className={classes.searchbartext} {...params} label="Search For A Book Title" />}
       />
     </>
