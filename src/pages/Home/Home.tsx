@@ -28,7 +28,10 @@ function Home() {
       {/*<img className={classes.errorhublogo} src={errohublogo} alt="errohublogo" />*/}
       {/*<div className="absolute w-204 h-79 left-68 top-0 text-secondBlack font-saira font-semibold text-5xl leading-79"> Error-Hub </div>*/}
 
-      <p className={classes.typography}> welcome to errorhub </p>
+      <p className={classes.typography}>
+          welcome to
+          <p className={classes.typography3}> errorhub </p>
+      </p>
       <p className={classes.typography2}>
         An application in which users <br/>
         can submit errors found in E-books along <br/>
