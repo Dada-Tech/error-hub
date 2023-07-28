@@ -6,6 +6,8 @@ import { GlobalStyle } from '../../theme/theme';
 import sallyImg from '../../components/Images/Saly-1.png';
 import Container from '../../components/Container/Container';
 import LogoandName from "../../components/LogoandName/LogoandName";
+import autocompleteStyling from "./autocompleteStyling";
+import SearchIcon from '@mui/icons-material/Search';
 
 function Home() {
   const listofBooks = [
@@ -18,6 +20,8 @@ function Home() {
     { label: 'The Hollow Chocolate Bunnies of the Apocalypse', id: 7 },
     { label: 'A Clockwork Orange', id: 8 },
   ];
+
+  const fine = autocompleteStyling();
 
   return (
     <>
@@ -41,13 +45,27 @@ function Home() {
       </p>
 
         <img className={classes.sallyimg} src={sallyImg} alt="sallyImg" />
+        {/*<div className="autocomplete">*/}
+        {/*<div className={classes.searchbar}>*/}
 
-      <Autocomplete
-        disablePortal
-        className={classes.searchbar}
-        options={listofBooks}
-        renderInput={(params) => <TextField className={classes.searchbartext} {...params} label="Search For A Book Title" />}
-      />
+            <Autocomplete
+              disablePortal
+              classes={fine}
+              className={classes.searchbar}
+              options={listofBooks}
+              renderInput={(params) => <TextField
+                  className={classes.searchbartext} {...params} InputProps={{
+                  ...params.InputProps,
+                  startAdornment: (
+                      <>
+                          <SearchIcon color="disabled" />
+                          {params.InputProps.startAdornment}
+                      </>
+                  ),
+              }}
+                  label="Search For A Book Title" variant="outlined"/>}
+            />
+        {/*</div>*/}
     </>
   );
 }
