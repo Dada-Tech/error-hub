@@ -11,6 +11,13 @@ import SearchIcon from '@mui/icons-material/Search';
 import fetchBookSuggestions from "../../components/Googlebooksapi/Googlebooksapi";
 // import { AutocompleteInputChangeReason } from '@mui/material/Autocomplete';
 
+interface Book {
+    volumeInfo: {
+        title: string;
+        // Add other properties from the response as needed
+    };
+    // Add other properties from the response as needed
+}
 
 function Home() {
     // const listofBooks = [
@@ -28,7 +35,7 @@ function Home() {
 
 
         const [inputValue, setInputValue] = useState('');
-        const [suggestions, setSuggestions] = useState([]);
+        const [suggestions, setSuggestions] = useState<Book[]>([]);
 
         const handleInputChange = (event: React.SyntheticEvent, newValue: string) => {
             setInputValue(newValue);
@@ -43,7 +50,7 @@ function Home() {
             // console.log('Input Change Reason:', reason);
         };
 
-        return (
+    return (
             <>
                 <GlobalStyle/>
                 <Container/>
@@ -91,7 +98,5 @@ function Home() {
             </>
         );
 }
-
-// export default BookSearch;
 
 export default Home;
