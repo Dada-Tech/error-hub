@@ -21,7 +21,7 @@ const listofBooks = [
 ];
 
 function Home() {
-    const fine = autocompleteStyling();
+    const muiStyling = autocompleteStyling();
 
     return (
             <>
@@ -48,7 +48,7 @@ function Home() {
 
                 <Autocomplete
                     // disablePortal
-                    classes={fine}
+                    classes={muiStyling}
                     className={classes.searchbar}
                     options={listofBooks}
                         renderInput={(params) => <TextField
@@ -61,7 +61,9 @@ function Home() {
                             </>
                         ),
                     }}
-                        label="Search For A Book Title" variant="outlined"/>}
+                        label="Search For A Book Title"
+                        variant="outlined"/>
+                    }
                 />
             </>
         );
