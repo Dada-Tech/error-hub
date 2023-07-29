@@ -51,18 +51,20 @@ function Home() {
                     classes={muiStyling}
                     className={classes.searchbar}
                     options={listofBooks}
-                        renderInput={(params) => <TextField
-                        className={classes.searchbartext} {...params} InputProps={{
-                        ...params.InputProps,
-                        startAdornment: (
-                            <>
-                                <SearchIcon color="disabled"/>
-                                {params.InputProps.startAdornment}
-                            </>
-                        ),
-                    }}
-                        label="Search For A Book Title"
-                        variant="outlined"/>
+                    renderInput={(params) =>
+                        <TextField
+                            className={classes.searchbartext} {...params} InputProps={{
+                            ...params.InputProps,
+                            startAdornment: (
+                                <>
+                                    <SearchIcon color="disabled"/>
+                                    {params.InputProps.startAdornment}
+                                </>
+                            ),
+                        }}
+                        placeholder="Search For A Book Title"
+                        variant="outlined"
+                        />
                     }
                 />
             </>

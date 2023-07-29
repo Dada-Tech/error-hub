@@ -8,10 +8,10 @@ const autocompleteStyling = makeStyles(() => ({
         //     // after changing its padding-left.
         //     transform: "translate(34px, 20px) scale(1);"
         // },
-        "&.Mui-focused .MuiInputLabel-outlined": {
-            color: "black",
-            background: "#0089ED",
-        },
+        // "&.Mui-focused .MuiInputLabel-outlined": {
+        //     color: "black",
+        //     background: "#0089ED",
+        // },
           "&.MuiAutocomplete-hasPopupIcon.css-1h51icj-MuiAutocomplete-root .MuiOutlinedInput-root": {
               borderRadius: "13px",
           }
