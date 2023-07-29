@@ -66,16 +66,18 @@ function Home() {
                     options={suggestions}
                     getOptionLabel={(option) => option.volumeInfo.title}
                         renderInput={(params) => <TextField
-                        className={classes.searchbartext} {...params} InputProps={{
-                        ...params.InputProps,
-                        startAdornment: (
-                            <>
-                                <SearchIcon color="disabled"/>
-                                {params.InputProps.startAdornment}
-                            </>
-                        ),
-                    }}
-                        label="Search For A Book Title" variant="outlined"/>}
+                        className={classes.searchbartext} {...params}
+                        InputProps={{
+                            ...params.InputProps,
+                            startAdornment: (
+                                <>
+                                    <SearchIcon color="disabled"/>
+                                    {params.InputProps.startAdornment}
+                                </>
+                            ),
+                        }}
+                     placeholder="Search For A Book Title" variant="outlined"/>
+                    }
                     inputValue={inputValue}
                     onInputChange={handleInputChange}
                 />
