@@ -9,7 +9,6 @@ import LogoandName from "../../components/LogoandName/LogoandName";
 import autocompleteStyling from "./autocompleteStyling";
 import SearchIcon from '@mui/icons-material/Search';
 import fetchBookSuggestions from "../../components/Googlebooksapi/Googlebooksapi";
-// import { AutocompleteInputChangeReason } from '@mui/material/Autocomplete';
 
 interface Book {
     volumeInfo: {
@@ -20,35 +19,22 @@ interface Book {
 }
 
 function Home() {
-    // const listofBooks = [
-    //   { label: 'To Kill a Mockingbird', id: 1 },
-    //   { label: 'Brave New World', id: 2 },
-    //   { label: 'The Grapes of Wrath', id: 3 },
-    //   { label: 'The Catcher in the Rye', id: 4 },
-    //   { label: 'The Sun Also Rises', id: 5 },
-    //   { label: 'The Unbearable Lightness of Being', id: 6 },
-    //   { label: 'The Hollow Chocolate Bunnies of the Apocalypse', id: 7 },
-    //   { label: 'A Clockwork Orange', id: 8 },
-    // ];
-
     const fine = autocompleteStyling();
 
+    const [inputValue, setInputValue] = useState('');
+    const [suggestions, setSuggestions] = useState<Book[]>([]);
 
-        const [inputValue, setInputValue] = useState('');
-        const [suggestions, setSuggestions] = useState<Book[]>([]);
-
-        const handleInputChange = (event: React.SyntheticEvent, newValue: string) => {
-            setInputValue(newValue);
-            if (newValue) {
-                fetchBookSuggestions(newValue).then((results) => {
-                    setSuggestions(results);
-                });
-            }
-            else {
-                setSuggestions([]);
-            }
-            // console.log('Input Change Reason:', reason);
-        };
+    const handleInputChange = (event: React.SyntheticEvent, newValue: string) => {
+        setInputValue(newValue);
+        if (newValue) {
+            fetchBookSuggestions(newValue).then((results) => {
+                setSuggestions(results);
+            });
+        }
+        else {
+            setSuggestions([]);
+        }
+    };
 
     return (
             <>
@@ -72,8 +58,7 @@ function Home() {
                 </p>
 
                 <img className={classes.sallyimg} src={sallyImg} alt="sallyImg"/>
-                {/*<div className="autocomplete">*/}
-                {/*<div className={classes.searchbar}>*/}
+
                 <Autocomplete
                     // disablePortal
                     classes={fine}
@@ -94,7 +79,6 @@ function Home() {
                     inputValue={inputValue}
                     onInputChange={handleInputChange}
                 />
-                {/*</div>*/}
             </>
         );
 }
