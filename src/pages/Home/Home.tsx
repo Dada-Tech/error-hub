@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Autocomplete from '@mui/material/Autocomplete';
 import TextField from '@mui/material/TextField';
 import classes from './Home.module.scss';
@@ -8,47 +8,20 @@ import Container from '../../components/Container/Container';
 import LogoandName from "../../components/LogoandName/LogoandName";
 import autocompleteStyling from "./autocompleteStyling";
 import SearchIcon from '@mui/icons-material/Search';
-import fetchBookSuggestions from "../../components/Googlebooksapi/Googlebooksapi";
-// import { AutocompleteInputChangeReason } from '@mui/material/Autocomplete';
 
-interface Book {
-    volumeInfo: {
-        title: string;
-        // Add other properties from the response as needed
-    };
-    // Add other properties from the response as needed
-}
+const listofBooks = [
+    { label: 'To Kill a Mockingbird', id: 1 },
+    { label: 'Brave New World', id: 2 },
+    { label: 'The Grapes of Wrath', id: 3 },
+    { label: 'The Catcher in the Rye', id: 4 },
+    { label: 'The Sun Also Rises', id: 5 },
+    { label: 'The Unbearable Lightness of Being', id: 6 },
+    { label: 'The Hollow Chocolate Bunnies of the Apocalypse', id: 7 },
+    { label: 'A Clockwork Orange', id: 8 },
+];
 
 function Home() {
-    // const listofBooks = [
-    //   { label: 'To Kill a Mockingbird', id: 1 },
-    //   { label: 'Brave New World', id: 2 },
-    //   { label: 'The Grapes of Wrath', id: 3 },
-    //   { label: 'The Catcher in the Rye', id: 4 },
-    //   { label: 'The Sun Also Rises', id: 5 },
-    //   { label: 'The Unbearable Lightness of Being', id: 6 },
-    //   { label: 'The Hollow Chocolate Bunnies of the Apocalypse', id: 7 },
-    //   { label: 'A Clockwork Orange', id: 8 },
-    // ];
-
     const fine = autocompleteStyling();
-
-
-        const [inputValue, setInputValue] = useState('');
-        const [suggestions, setSuggestions] = useState<Book[]>([]);
-
-        const handleInputChange = (event: React.SyntheticEvent, newValue: string) => {
-            setInputValue(newValue);
-            if (newValue) {
-                fetchBookSuggestions(newValue).then((results) => {
-                    setSuggestions(results);
-                });
-            }
-            else {
-                setSuggestions([]);
-            }
-            // console.log('Input Change Reason:', reason);
-        };
 
     return (
             <>
@@ -72,14 +45,12 @@ function Home() {
                 </p>
 
                 <img className={classes.sallyimg} src={sallyImg} alt="sallyImg"/>
-                {/*<div className="autocomplete">*/}
-                {/*<div className={classes.searchbar}>*/}
+
                 <Autocomplete
                     // disablePortal
                     classes={fine}
                     className={classes.searchbar}
-                    options={suggestions}
-                    getOptionLabel={(option) => option.volumeInfo.title}
+                    options={listofBooks}
                         renderInput={(params) => <TextField
                         className={classes.searchbartext} {...params} InputProps={{
                         ...params.InputProps,
@@ -91,10 +62,7 @@ function Home() {
                         ),
                     }}
                         label="Search For A Book Title" variant="outlined"/>}
-                    inputValue={inputValue}
-                    onInputChange={handleInputChange}
                 />
-                {/*</div>*/}
             </>
         );
 }
