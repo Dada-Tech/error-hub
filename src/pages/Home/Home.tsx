@@ -28,9 +28,6 @@ function Home() {
                 <GlobalStyle/>
                 <Container/>
                 <LogoandName/>
-                {/*<div className={classes.logoheader}/>*/}
-                {/*<img className={classes.errorhublogo} src={errohublogo} alt="errohublogo" />*/}
-                {/*<div className="absolute w-204 h-79 left-68 top-0 text-secondBlack font-saira font-semibold text-5xl leading-79"> Error-Hub </div>*/}
 
                 <p className={classes.typography}>
                     welcome to
