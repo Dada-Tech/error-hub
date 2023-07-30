@@ -44,7 +44,6 @@ function Home() {
                 <img className={classes.sallyimg} src={sallyImg} alt="sallyImg"/>
 
                 <Autocomplete
-                    // disablePortal
                     classes={muiStyling}
                     className={classes.searchbar}
                     options={listofBooks}
