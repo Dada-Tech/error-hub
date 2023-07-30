@@ -7,7 +7,6 @@ function OuterDiv() {
         <div className={classes.outerdiv}>
             <img className={classes.errorhublogo} src={errohublogo} alt="errohublogo" />
             <div className={classes.header}> Error-Hub </div>
-            {/*<div className="absolute w-204 h-79 left-68 top-0 text-secondBlack font-saira font-semibold text-5xl leading-79"> Error-Hub </div>*/}
         </div>
     );
 }
