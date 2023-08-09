@@ -16,7 +16,7 @@ function Container() {
         mx: 'auto',
       }}
       >
-          {/* Content of the container goes here */}
+
       </Box>
   );
 }
