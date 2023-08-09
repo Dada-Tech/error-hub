@@ -15,6 +15,7 @@ Notes for any specific setup to get the branch working
 - [ ] Branch is correctly named
     - prefixed with `feature-`, `fix-`, `refactor-`
 #### Code Quality
+- [ ] No Merge Conflicts
 - [ ] Lint Passes (yarn lint)
     - `npm run lint`
 - [ ] All comments are clean, concise and relevant
