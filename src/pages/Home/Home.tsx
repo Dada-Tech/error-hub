@@ -13,9 +13,7 @@ import fetchBookSuggestions from "../../components/Googlebooksapi/Googlebooksapi
 interface Book {
     volumeInfo: {
         title: string;
-        // Add other properties from the response as needed
     };
-    // Add other properties from the response as needed
 }
 
 function Home() {

@@ -2,12 +2,6 @@ import { makeStyles } from "@material-ui/styles";
 
 const autocompleteStyling = makeStyles(() => ({
     root: {
-        // "& .MuiInputLabel-outlined:not(.MuiInputLabel-shrink)": {
-        //     // Default transform is "translate(14px, 20px) scale(1)""
-        //     // This lines up the label with the initial cursor position in the input
-        //     // after changing its padding-left.
-        //     transform: "translate(34px, 20px) scale(1);"
-        // },
         "&.Mui-focused .MuiInputLabel-outlined": {
             color: "black",
             background: "#0089ED",
