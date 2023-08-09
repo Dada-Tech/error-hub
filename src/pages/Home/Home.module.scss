@@ -1,28 +1,3 @@
-.errorhublogo {
-  background-color: transparent;
-  height: 56px;
-  left: 0;
-  position: absolute;
-  top: 16px;
-  width: 59px;
-}
-
-.header {
-  color: #00204a;
-  font-family: "Saira SemiCondensed", serif;
-  font-size: 50px;
-  font-style: normal;
-  font-weight: 600;
-  height: auto;
-  left: 68px;
-  line-height: normal;
-  mix-blend-mode: normal;
-  position: absolute;
-  text-align: left;
-  top: -1px;
-  width: auto;
-}
-
 .typography {
   width: 216px;
   height: 83px;
@@ -30,7 +5,6 @@
   font-style: normal;
   font-weight: 600;
   font-size: 34px;
-  line-height: 51px;
   color: #FFF;
   position: absolute;
   left: 73px;
@@ -59,29 +33,20 @@
   flex-grow: 1;
 }
 
+.typography3 {
+  font-size: 24px;
+  font-weight: 100;
+}
+
 .searchbar {
   position: absolute;
   top: 371px;
   left: 384px;
-  font-family: Poppins, serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  display: flex;
-  text-transform: capitalize;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 8px;
   width: 610px;
-  height: 64px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
 .searchbartext {
-  border-radius: 13px;
+  color: black;
 }
 
 .sallyimg {
