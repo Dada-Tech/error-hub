@@ -20,6 +20,10 @@ module.exports = {
       'secondBlack': '#00204A',
     },
 
+    width: {
+      '16': '3rem',
+    },
+
     container: {
       padding: {
         DEFAULT: '1rem',

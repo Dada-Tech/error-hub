@@ -29,14 +29,12 @@ function Home() {
                 <Container/>
                 <LogoandName/>
 
-                <div className="relative left-[73px] w-[396px] h-[87px] flex-col justify-start items-start inline-flex">
-                    <div className={classes.typography}>
+                <div className="flex-col justify-start p-8">
+                    <div className="p-8">
                         <div className="text-white text-[34px] font-semibold">Welcome to <br/> </div>
-                        <div className="text-white text-2xl font-normal">Errorhub</div>
-                    </div>
+                        <div className="text-white text-2xl font-normal pb-8">Errorhub</div>
 
-                    <div className="self-stretch grow shrink basis-0 text-white text-[13px] font-light">
-                        <div>
+                        <div className="Self-stretch grow shrink basis-0">
                             An application in which users <br/>
                             can submit errors found in E-books along <br/>
                             with auto-filled metadata to correctly identify <br/>
@@ -44,8 +42,10 @@ function Home() {
                             a database.
                         </div>
                     </div>
+                </div>
 
-                    <img className={classes.sallyimg} src={sallyImg} alt="sallyImg"/>
+                <div className="relative">
+                    <img className="absolute top-4 md:top-6 w-[385px] h-[385px]" src={sallyImg} alt="sallyImg"/>
                 </div>
 
                 {/*<div className="w-[329px] h-[115px] flex-col justify-start items-start inline-flex">*/}
