@@ -25,12 +25,19 @@ module.exports = {
     },
 
     container: {
+      sm: '480px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1440px',
+
       padding: {
         DEFAULT: '1rem',
         sm: '2rem',
         lg: '4rem',
         xl: '5rem',
         '2xl': '6rem',
+        'px-4': '22rem, 19rem',
+        // 'py-2': '2.1rem',
       }
     }
   },
