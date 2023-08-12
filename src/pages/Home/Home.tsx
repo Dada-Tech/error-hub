@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Autocomplete from '@mui/material/Autocomplete';
 import TextField from '@mui/material/TextField';
 import classes from './Home.module.scss';
@@ -8,20 +8,31 @@ import Container from '../../components/Container/Container';
 import LogoandName from "../../components/LogoandName/LogoandName";
 import autocompleteStyling from "./autocompleteStyling";
 import SearchIcon from '@mui/icons-material/Search';
+import fetchBookSuggestions from "../../components/Googlebooksapi/Googlebooksapi";
 
-const listofBooks = [
-    { label: 'To Kill a Mockingbird', id: 1 },
-    { label: 'Brave New World', id: 2 },
-    { label: 'The Grapes of Wrath', id: 3 },
-    { label: 'The Catcher in the Rye', id: 4 },
-    { label: 'The Sun Also Rises', id: 5 },
-    { label: 'The Unbearable Lightness of Being', id: 6 },
-    { label: 'The Hollow Chocolate Bunnies of the Apocalypse', id: 7 },
-    { label: 'A Clockwork Orange', id: 8 },
-];
+interface Book {
+    volumeInfo: {
+        title: string;
+    };
+}
 
 function Home() {
-    const muiStyling = autocompleteStyling();
+    const fine = autocompleteStyling();
+
+    const [inputValue, setInputValue] = useState('');
+    const [suggestions, setSuggestions] = useState<Book[]>([]);
+
+    const handleInputChange = (event: React.SyntheticEvent, newValue: string) => {
+        setInputValue(newValue);
+        if (newValue) {
+            fetchBookSuggestions(newValue).then((results) => {
+                setSuggestions(results);
+            });
+        }
+        else {
+            setSuggestions([]);
+        }
+    };
 
     return (
             <>
@@ -44,12 +55,13 @@ function Home() {
                 <img className={classes.sallyimg} src={sallyImg} alt="sallyImg"/>
 
                 <Autocomplete
-                    classes={muiStyling}
+                    classes={fine}
                     className={classes.searchbar}
-                    options={listofBooks}
-                    renderInput={(params) =>
-                        <TextField
-                            className={classes.searchbartext} {...params} InputProps={{
+                    options={suggestions}
+                    getOptionLabel={(option) => option.volumeInfo.title}
+                        renderInput={(params) => <TextField
+                        className={classes.searchbartext} {...params}
+                        InputProps={{
                             ...params.InputProps,
                             startAdornment: (
                                 <>
@@ -58,10 +70,10 @@ function Home() {
                                 </>
                             ),
                         }}
-                        placeholder="Search For A Book Title"
-                        variant="outlined"
-                        />
+                     placeholder="Search For A Book Title" variant="outlined"/>
                     }
+                    inputValue={inputValue}
+                    onInputChange={handleInputChange}
                 />
             </>
         );

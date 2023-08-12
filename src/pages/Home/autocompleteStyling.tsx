@@ -2,6 +2,10 @@ import { makeStyles } from "@material-ui/styles";
 
 const autocompleteStyling = makeStyles(() => ({
     root: {
+        "&.Mui-focused .MuiInputLabel-outlined": {
+            color: "black",
+            background: "#0089ED",
+        },
           "&.MuiAutocomplete-hasPopupIcon.css-1h51icj-MuiAutocomplete-root .MuiOutlinedInput-root": {
               borderRadius: "13px",
           }
