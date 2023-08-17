@@ -16,7 +16,7 @@ const MyContainer = () => {
                     <div className="pt-4">
                         <div className="pb-2 text-black text-base capitalize">Book Title</div>
                         <TextField
-                            sx={{ width: '526px'}}
+                            sx={{ width: '538px'}}
                             placeholder="To Kill a Mockingbird"
                             variant="outlined"
                             hiddenLabel
@@ -25,7 +25,7 @@ const MyContainer = () => {
                     <div className="pt-4">
                         <div className="pb-2 text-black text-base capitalize">Author(s)</div>
                         <TextField
-                            sx={{ width: '526px'}}
+                            sx={{ width: '538px'}}
                             placeholder="Harper Lee"
                             variant="outlined"
                             hiddenLabel
@@ -34,16 +34,17 @@ const MyContainer = () => {
                     <div className="pt-4">
                         <div className="pb-2 text-black text-base capitalize">ISBN</div>
                         <TextField
-                            sx={{ width: '526px'}}
+                            sx={{ width: '538px'}}
                             placeholder="9780062368683"
                             variant="outlined"
                             hiddenLabel
                         />
                     </div>
-                    <div className="grid grid-cols-2 grid-rows-1 gap-4">
+                    <div className="grid grid-cols-2 grid-rows-1 gap-0">
                         <div className="pt-8">
                             <div className="pb-2 text-black text-base capitalize">Book Type</div>
                             <TextField
+                                sx={{ width: '260px'}}
                                 placeholder="eg. kindle, mobi, pdf, ibook"
                                 variant="outlined"
                                 hiddenLabel
@@ -52,16 +53,18 @@ const MyContainer = () => {
                         <div className="pt-8">
                             <div className="pb-2 text-black text-base capitalize">Error Type</div>
                             <TextField
+                                sx={{ width: '251px'}}
                                 placeholder="eg. Spelling, grammar, image"
                                 variant="outlined"
                                 hiddenLabel
                             />
                         </div>
                     </div>
-                    <div className="grid grid-cols-2 grid-rows-1 gap-4">
+                    <div className="grid grid-cols-2 grid-rows-1">
                         <div className="pt-8">
                             <div className="pb-2 text-black text-base capitalize">Chapter</div>
                             <TextField
+                                sx={{ width: '260px'}}
                                 placeholder="Chapter"
                                 variant="outlined"
                                 hiddenLabel
@@ -70,6 +73,7 @@ const MyContainer = () => {
                         <div className="pt-8">
                             <div className="pb-2 text-black text-base capitalize">Page Number</div>
                             <TextField
+                                sx={{ width: '251px'}}
                                 placeholder="Page Number"
                                 variant="outlined"
                                 hiddenLabel
@@ -77,8 +81,8 @@ const MyContainer = () => {
                         </div>
                     </div>
                 </div>
-                <div className="pt-8 flex item-center justify-center">
-                    <Button variant="contained" sx={{ width: '526px'}} color="primary" className="h-[54px] bg-sky-500 rounded-[10px] shadow uppercase bg-lightBlue"> upload </Button>
+                <div className="pt-8">
+                    <Button variant="contained" sx={{ width: '526px'}} color="primary" className="h-[54px] bg-sky-500 rounded-2xl shadow uppercase bg-lightBlue"> upload </Button>
                 </div>
             </div>
         </Container>
