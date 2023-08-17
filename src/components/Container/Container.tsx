@@ -3,21 +3,7 @@ import { Box } from '@mui/material';
 
 function Container() {
   return (
-      <Box
-          sx={{
-        width: '1744px',
-        height: '582px',
-        backgroundColor: '#ffffff',
-        position: 'fixed',
-        top: '422px',
-        bottom: '0',
-        left: '0',
-        right: '0',
-        mx: 'auto',
-      }}
-      >
-
-      </Box>
+      <Box className="bg-white container max-w-full fixed top-[43%] bottom-0 px-4 z-0"/>
   );
 }
 
