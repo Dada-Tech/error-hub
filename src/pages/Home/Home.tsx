@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { GlobalStyle } from '../../theme/theme';
 import Container from '../../components/Container/Container';
 import LogoandName from "../../components/LogoandName/LogoandName";
