@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { TextField, Button } from '@mui/material';
+import { TextField, Button, Container } from '@mui/material';
 
 
 function SignupForm() {
@@ -14,27 +14,27 @@ function SignupForm() {
     };
 
     return (
+        <Container maxWidth = "xs" className= "relative pt-5 bg-white rounded-[40px] shadow border flex flex-col justify-end items-center">
         <form onSubmit={handleSubmit}>
-
-            <input
+            <TextField
                 type="email"
                 placeholder="Email Address"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)} />
 
-            <input
+            <TextField
                 type="text"
                 placeholder="Username"
                 value={name}
                 onChange={(e) => setName(e.target.value)} />
 
-            <input
+            <TextField
                 type="tel"
                 placeholder="Phone Number"
                 value={phoneNumber}
                 onChange={(e) => setPhoneNumber(e.target.value)} />
 
-            <input
+            <TextField
                 type="password"
                 placeholder="Password"
                 value={password}
@@ -46,7 +46,9 @@ function SignupForm() {
                 Sign Up
             </button> */}
             </Button>
-        </form>
+            </form>
+            </Container>
+      
     );
 }
 
