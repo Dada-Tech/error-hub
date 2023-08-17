@@ -37,14 +37,14 @@ module.exports = {
         xl: '5rem',
         '2xl': '6rem',
         'px-4': '22rem, 19rem',
-        // 'py-2': '2.1rem',
       }
     }
   },
 
   fontFamily: {
-    poppins: ['"Poppins"', 'sans-serif'],
+    poppins: ['Poppins', 'sans-serif'],
     saira: ['"Saira SemiCondensed"', 'serif'],
+    sans: ['Helvetica', 'Arial', 'sans-serif'],
   },
 
   plugins: [
