@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const apiKey = 'AIzaSyBCCc8FkvKZmz-Hzw0m3iJbkynPczXub1U';
+const apiKey = process.env.REACT_APP_GOOGLE_API_KEY;
 
 const fetchBookSuggestions = async (searchTerm: string) => {
     const apiUrl = `https://www.googleapis.com/books/v1/volumes?q=${encodeURIComponent(

@@ -1,15 +1,6 @@
 .typography {
-  width: 216px;
-  height: 83px;
-  font-family: Poppins, serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 34px;
-  color: #FFF;
   position: absolute;
-  left: 73px;
-  top: 150px;
-  text-transform: capitalize;
+  top: 55px;
 }
 
 .typography2 {
@@ -51,7 +42,9 @@
 
 .sallyimg {
   position: absolute;
-  inset: 2.34% 49.03% 60.06% 24.24%;
+  inset: -0.66% 49.03% 60.06% 24.24%;
   width: 385px;
   height: 385px;
+  display: flex;
+
 }
