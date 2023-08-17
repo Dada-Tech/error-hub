@@ -52,10 +52,7 @@ function Home() {
                 <div className="flex justify-center items-center gap-0.5 py-2">
                     <Autocomplete
                         classes={muiStyling}
-                        // className={classes.searchbar}
                         sx={{width: '634px'}}
-                        className=" "
-                        // flex-col justify-center items-center gap-0.5 inline-flex px-80
                         options={listofBooks}
                         renderInput={(params) =>
                             <TextField
