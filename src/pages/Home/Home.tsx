@@ -17,7 +17,7 @@ interface Book {
 }
 
 function Home() {
-    const fine = autocompleteStyling();
+    const muiStyling = autocompleteStyling();
 
     const [inputValue, setInputValue] = useState('');
     const [suggestions, setSuggestions] = useState<Book[]>([]);
@@ -62,8 +62,8 @@ function Home() {
                 </div>
                 <div className="flex justify-center items-center gap-0.5 py-2">
                     <Autocomplete
-                        classes={fine}
-                        className={classes.searchbar}
+                        classes={muiStyling}
+                        sx={{width: '634px'}}
                         options={suggestions}
                         getOptionLabel={(option) => option.volumeInfo.title}
                         renderInput={(params) => <TextField
