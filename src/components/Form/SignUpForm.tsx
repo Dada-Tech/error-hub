@@ -46,17 +46,19 @@ function SignupForm() {
                 onChange={(e) => setEmail(e.target.value)} />
         </div>
                 
-        <div className = "flex flex-row space-x-32 justify-center mt-8 px-8">
+        <div className = "flex flex-row space-x-44 mt-8 px-8">
             <Typography className = "w-[83px] h-6 bg-white flex-col justify-center items-start inline-flex">
                  <div className="text-center text-black text-opacity-90 text-base font-normal capitalize">username</div>
             </Typography>
 
+            
             <Typography className = "w-[119px] h-6 bg-white flex-col justify-center items-start inline-flex">
                 <div className="text-center text-black text-opacity-90 text-base font-normal capitalize">Phone Number</div>
             </Typography>
+        
         </div>
 
-        <div className = "flex flex-row justify-center px-8">
+        <div className = "flex flex-row space-x-5 justify-center px-8">
             <TextField className = "flex flex-grow"
                 type="text"
                 placeholder="Username"
