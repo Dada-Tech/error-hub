@@ -1,5 +1,4 @@
 import React from 'react';
-import classes from '../../pages/Home/Home.module.scss';
 import errohublogo from '../Images/errohublogo.png';
 
 function OuterDiv() {
