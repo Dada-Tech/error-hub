@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { TextField, Button, Container } from '@mui/material';
+import { TextField, Button, Container, Typography } from '@mui/material';
 
 
 function SignupForm() {
@@ -14,40 +14,89 @@ function SignupForm() {
     };
 
     return (
-        <Container maxWidth = "xs" className= "relative pt-5 bg-white rounded-[40px] shadow border flex flex-col justify-end items-center">
-        <form onSubmit={handleSubmit}>
-            <TextField
+       //<Container maxWidth = "xs" className= "pt-5 bg-white rounded-[40px] shadow border flex flex-col justify-end items-center">
+        <form onSubmit={handleSubmit} className='fixed flex flex-row bg-white rounded-[20px] shadow border'>
+        <div className = "flex flex-col w-[539px] h-[541px] pt-5" >
+
+        <div className="w-[223px] h-8 bg-white flex-col justify-center items-start inline-flex ml-8">
+  <div className="text-center">
+    <span className="text-black text-opacity-90 text-[21px] font-normal">Welcome to</span>
+    <span className="text-black text-opacity-90 text-[13px] font-normal"> </span>
+    <span className="text-blue text-opacity-90 text-[21px] font-semibold">ErrorHub</span>
+  </div>
+</div> 
+
+        <div className = "ml-8">
+        <Typography className="w-52 h-[83px] bg-white flex-col justify-center items-start inline-flex">
+            <div className="text-black text-opacity-90 text-[55px] font-normal">Sign Up</div>
+        </Typography>
+        </div>
+
+        <div className = "ml-8">
+        <Typography className="w-48 h-6 bg-white flex-col justify-center items-start inline-flex">
+            <div className="text-center text-black text-opacity-90 text-base font-normal capitalize">Enter you email address</div>
+        </Typography>
+        </div>
+
+        <div className = "flex px-8">
+            <TextField className = "flex flex-grow"
                 type="email"
                 placeholder="Email Address"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)} />
+        </div>
+                
+        <div className = "flex flex-row space-x-32 justify-center mt-8 px-8">
+            <Typography className = "w-[83px] h-6 bg-white flex-col justify-center items-start inline-flex">
+                 <div className="text-center text-black text-opacity-90 text-base font-normal capitalize">username</div>
+            </Typography>
 
-            <TextField
+            <Typography className = "w-[119px] h-6 bg-white flex-col justify-center items-start inline-flex">
+                <div className="text-center text-black text-opacity-90 text-base font-normal capitalize">Phone Number</div>
+            </Typography>
+        </div>
+
+        <div className = "flex flex-row justify-center px-8">
+            <TextField className = "flex flex-grow"
                 type="text"
                 placeholder="Username"
                 value={name}
                 onChange={(e) => setName(e.target.value)} />
 
-            <TextField
+            <TextField className = "flex flex-grow"
                 type="tel"
                 placeholder="Phone Number"
                 value={phoneNumber}
-                onChange={(e) => setPhoneNumber(e.target.value)} />
+                onChange={(e) => setPhoneNumber(e.target.value)} />          
+        </div>
 
-            <TextField
-                type="password"
-                placeholder="Password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)} />
+        <div className = "mt-8">
+        <Typography>
+            <div className="w-[162px] h-[27px] text-center text-black text-opacity-90 text-base font-normal capitalize ml-8 ">Enter your password</div>
+        </Typography>
+        </div>
+
+        <div className = "flex px-8">
+            <TextField className = "flex-grow"
+                    type="password"
+                    placeholder="Password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)} />
             
+        </div>
 
-            <Button variant="contained" type = "submit" className="py-4 px-8 text-primary-contrast font-poppins text-16 font-normal text-normal capitalize"> Sign Up
-            {/* <button type="submit" 
-                Sign Up
-            </button> */}
+
+        
+        <div className = "flex justify-center mt-5 px-8">
+            <Button variant="contained" type = "submit" className="py-4 px-8 text-primary-contrast font-poppins text-16 font-normal text-normal capitalize flex-grow"> Sign Up
             </Button>
+        </div>
+
+        </div>
+
+
             </form>
-            </Container>
+            //</Container>
       
     );
 }
