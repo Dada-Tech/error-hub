@@ -12,7 +12,7 @@ function SignUp() {
             <Container />
             <LogoandName />
             <Title/>
-            <div className="fixed top-32 flex justify-end w-[1384px] pb-5">
+            <div className="fixed top-32 right-8 flex justify-end w-[1384px] pb-5">
                 <SignUpForm/>
             </div>
       </>
