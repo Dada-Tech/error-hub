@@ -3,7 +3,7 @@ import { Box } from '@mui/material';
 
 function Container() {
   return (
-      <Box className="bg-white container max-w-full fixed top-[43%] bottom-0 px-4 z-0"/>
+      <Box className="flex justify-center item-center bg-white container max-w-full fixed top-[43%] bottom-0 px-4 z-0"/>
   );
 }
 
