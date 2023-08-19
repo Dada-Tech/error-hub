@@ -5,7 +5,7 @@ import TextField from '@mui/material/TextField';
 
 const MyContainer = () => {
     return (
-        <Container sx={{width: '90%'}} className="rounded-3xl m-0 mb-0 h-[779px] shadow-md hover:shadow-xl bg-white">
+        <Container sx={{width: '70%'}} className="rounded-3xl m-0 mb-0 h-[779px] shadow-md hover:shadow-xl bg-white">
             <div className="pl-4 pr-4">
                 <div className="">
                     <div className="text-black text-[21px] pt-8">

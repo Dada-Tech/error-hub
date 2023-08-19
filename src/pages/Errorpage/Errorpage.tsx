@@ -12,7 +12,7 @@ function Errorpage() {
                 <LogoandName/>
                 <Errorhubtitle/>
             </div>
-            <div className="absolute top-32 flex justify-center w-full -mt-7">
+            <div className="absolute top-32 flex justify-center md:w-full -mt-7">
                 <div className="w-1/2">
                     <MyContainer/>
                 </div>
