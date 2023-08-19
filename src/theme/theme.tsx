@@ -5,7 +5,6 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Poppins', sans-serif;
     color: white;
     font-size: 17px;
-    background: #0089ED;
   }
 `;
 
