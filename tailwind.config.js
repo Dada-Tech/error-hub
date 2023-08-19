@@ -21,9 +21,9 @@ module.exports = {
       'secondBlack': '#00204A',
     },
 
-    width: {
-      '16': '3rem',
-    },
+    // width: {
+    //   '16': '3rem',
+    // },
 
     container: {
       sm: '480px',

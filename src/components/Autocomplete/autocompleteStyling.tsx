@@ -7,18 +7,19 @@ const autocompleteStyling = makeStyles(() => ({
             background: "#0089ED",
         },
           "&.MuiAutocomplete-hasPopupIcon.css-1h51icj-MuiAutocomplete-root .MuiOutlinedInput-root": {
-              borderRadius: "13px",
           }
     },
     inputRoot: {
         color: "black",
         background: "white",
+        borderRadius: "13px",
+        important: 'true',
         '&[class*="MuiOutlinedInput-root"] .MuiAutocomplete-input:first-child': {
             // Default left padding is 6px
-            paddingLeft: 26
+            paddingLeft: 26,
         },
         "& .MuiOutlinedInput-notchedOutline": {
-            borderColor: "blue"
+            borderColor: "gray"
         },
         "&:hover .MuiOutlinedInput-notchedOutline": {
             borderColor: "black"
