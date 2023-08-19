@@ -16,11 +16,11 @@ const SignInContainer = () => {
                         <span className="text-blue font-semibold">ErrorHub</span>
                     </div>
                     <div className="text-[55px] capitalize">sign in</div>
-                    <div className="flex justify-start grid-cols-2 gap-4">
-                        <div className="capitalize pr-6">
+                    <div className="grid grid-cols-2 gap-4">
+                        <div className="capitalize">
                             <Button variant="contained" startIcon={<GoogleIcon/>} color="primary" className="w-80 h-[54px] bg-yellow-500 rounded-2xl shadow capitalize bg-secondlightBlue"> Sign in with Google </Button>
                         </div>
-                        <div className="flex justify-end grid-cols-2 gap-4">
+                        <div className=" grid grid-cols-2 grid-rows-1 gap-4">
                             <div className="">
                                 <Button variant="contained" startIcon={<Facebook/>}  color="primary" className="h-[54px] bg-sky-500 rounded-2xl shadow capitalize bg-lightBlue"/>
                             </div>
