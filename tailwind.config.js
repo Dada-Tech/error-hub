@@ -21,6 +21,11 @@ module.exports = {
     },
 
     container: {
+      sm: '480px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1440px',
+
       padding: {
         DEFAULT: '1rem',
         sm: '2rem',
@@ -32,8 +37,9 @@ module.exports = {
   },
 
   fontFamily: {
-    poppins: ['"Poppins"', 'sans-serif'],
+    poppins: ['Poppins', 'sans-serif'],
     saira: ['"Saira SemiCondensed"', 'serif'],
+    sans: ['Helvetica', 'Arial', 'sans-serif'],
   },
 
   plugins: [
