@@ -5,8 +5,8 @@ import TextField from '@mui/material/TextField';
 
 const MyContainer = () => {
     return (
-        <Container sx={{width: '635px', position: 'absolute', top: '123px', left: '350px'}} className="rounded-3xl m-0 mb-0 shadow-md hover:shadow-xl flex h-[779px] flex-col justify-center flex-shrink-0 items-center bg-white">
-            <div className="pl-4">
+        <Container sx={{width: '90%'}} className="rounded-3xl m-0 mb-0 h-[779px] shadow-md hover:shadow-xl bg-white">
+            <div className="pl-4 pr-4">
                 <div className="">
                     <div className="text-black text-[21px] pt-8">
                         <span>Upload your ebook to</span>
@@ -16,7 +16,7 @@ const MyContainer = () => {
                     <div className="pt-4">
                         <div className="pb-2 text-black text-base capitalize">Book Title</div>
                         <TextField
-                            sx={{ width: '538px'}}
+                            sx={{ width: '100%'}}
                             placeholder="To Kill a Mockingbird"
                             variant="outlined"
                             hiddenLabel
@@ -25,7 +25,7 @@ const MyContainer = () => {
                     <div className="pt-4">
                         <div className="pb-2 text-black text-base capitalize">Author(s)</div>
                         <TextField
-                            sx={{ width: '538px'}}
+                            sx={{ width: '100%'}}
                             placeholder="Harper Lee"
                             variant="outlined"
                             hiddenLabel
@@ -34,7 +34,7 @@ const MyContainer = () => {
                     <div className="pt-4">
                         <div className="pb-2 text-black text-base capitalize">ISBN</div>
                         <TextField
-                            sx={{ width: '538px'}}
+                            sx={{ width: '100%'}}
                             placeholder="9780062368683"
                             variant="outlined"
                             hiddenLabel
@@ -44,7 +44,8 @@ const MyContainer = () => {
                         <div className="pt-8">
                             <div className="pb-2 text-black text-base capitalize">Book Type</div>
                             <TextField
-                                sx={{ width: '260px'}}
+                                // className=""
+                                sx={{ width: '90%'}}
                                 placeholder="eg. kindle, mobi, pdf, ibook"
                                 variant="outlined"
                                 hiddenLabel
@@ -53,7 +54,7 @@ const MyContainer = () => {
                         <div className="pt-8">
                             <div className="pb-2 text-black text-base capitalize">Error Type</div>
                             <TextField
-                                sx={{ width: '251px'}}
+                                sx={{ width: '100%'}}
                                 placeholder="eg. Spelling, grammar, image"
                                 variant="outlined"
                                 hiddenLabel
@@ -64,7 +65,7 @@ const MyContainer = () => {
                         <div className="pt-8">
                             <div className="pb-2 text-black text-base capitalize">Chapter</div>
                             <TextField
-                                sx={{ width: '260px'}}
+                                sx={{ width: '90%'}}
                                 placeholder="Chapter"
                                 variant="outlined"
                                 hiddenLabel
@@ -73,7 +74,7 @@ const MyContainer = () => {
                         <div className="pt-8">
                             <div className="pb-2 text-black text-base capitalize">Page Number</div>
                             <TextField
-                                sx={{ width: '251px'}}
+                                sx={{ width: '100%'}}
                                 placeholder="Page Number"
                                 variant="outlined"
                                 hiddenLabel
@@ -82,7 +83,7 @@ const MyContainer = () => {
                     </div>
                 </div>
                 <div className="pt-8">
-                    <Button variant="contained" sx={{ width: '526px'}} color="primary" className="h-[54px] bg-sky-500 rounded-2xl shadow uppercase bg-lightBlue"> upload </Button>
+                    <Button variant="contained" sx={{ width: '100%'}} color="primary" className="h-[54px] bg-sky-500 rounded-2xl shadow uppercase bg-lightBlue"> upload </Button>
                 </div>
             </div>
         </Container>
