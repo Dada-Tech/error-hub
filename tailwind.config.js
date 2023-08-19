@@ -20,10 +20,6 @@ module.exports = {
       'secondBlack': '#00204A',
     },
 
-    // width: {
-    //   '16': '3rem',
-    // },
-
     container: {
       sm: '480px',
       md: '768px',
@@ -36,7 +32,6 @@ module.exports = {
         lg: '4rem',
         xl: '5rem',
         '2xl': '6rem',
-        'px-4': '22rem, 19rem',
       }
     }
   },
