@@ -5,12 +5,12 @@ import sallyImg from "../Images/Saly-1.png";
 function Title() {
   return (
       <>
-        <div className="flex justify-start p-8 pb-0">
+        <div className="flex justify-start p-8 pb-16">
           <div className="p-8 pb-0">
             <div className="grid grid-cols-2 grid-rows-1 gap-4">
               <div>
                 <div className="text-white text-[34px] font-semibold">Welcome to <br/> </div>
-                <div className="text-white text-2xl pb-8">Errorhub</div>
+                <div className="text-white text-2xl pb-1">Errorhub</div>
               </div>
               <div>
                 <img className={classes.sallyimg} src={sallyImg} alt="sallyImg"/>

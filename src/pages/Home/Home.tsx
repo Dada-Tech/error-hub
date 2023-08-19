@@ -1,19 +1,23 @@
 import React from 'react';
 import { GlobalStyle } from '../../theme/theme';
-import Container from '../../components/Container/Container';
 import LogoandName from "../../components/LogoandName/LogoandName";
 import Title from "../../components/Title/Title";
 import Searchbar from "../../components/Autocomplete/Autocomplete";
 
 function Home() {
     return (
-            <>
+            <div className="flex flex-wrap align-top w-full">
                 <GlobalStyle/>
-                <Container/>
-                <LogoandName/>
-                <Title/>
-                <Searchbar/>
-            </>
+                <div className="bg-blue w-full">
+                    <LogoandName/>
+                    <Title/>
+                </div>
+                <div className="flex justify-center w-full -mt-7">
+                    <div className="w-1/2">
+                        <Searchbar/>
+                    </div>
+                </div>
+            </div>
         );
 }
 
