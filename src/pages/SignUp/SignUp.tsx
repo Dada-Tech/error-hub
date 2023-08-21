@@ -2,7 +2,7 @@ import React from 'react';
 import { GlobalStyle } from '../../theme/theme';
 import LogoandName from "../../components/LogoandName/LogoandName";
 import SignUpForm from '../../components/Form/SignUpForm';
-import Title from "../../components/Title/Title";
+import Signuptitle from "../../components/Title/signupTitle";
 
 function SignUp() {
   return (
@@ -10,7 +10,7 @@ function SignUp() {
           <GlobalStyle/>
           <div className="bg-blue w-full">
               <LogoandName/>
-              <Title/>
+              <Signuptitle/>
           </div>
           <div className="absolute top-32 right-8 flex justify-end w-full -mt-7">
               <div className="w-1/2">
