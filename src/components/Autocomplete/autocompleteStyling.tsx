@@ -15,7 +15,6 @@ const autocompleteStyling = makeStyles(() => ({
         borderRadius: "13px",
         important: 'true',
         '&[class*="MuiOutlinedInput-root"] .MuiAutocomplete-input:first-child': {
-            // Default left padding is 6px
             paddingLeft: 26,
         },
         "& .MuiOutlinedInput-notchedOutline": {
