@@ -1,21 +1,23 @@
 import React from 'react';
 import { GlobalStyle } from '../../theme/theme';
-// import Container from '../../components/Container/Container';
 import LogoandName from "../../components/LogoandName/LogoandName";
 import SignUpForm from '../../components/Form/SignUpForm';
-import Signuptitle from "../../components/Title/signupTitle";
+import Title from "../../components/Title/Title";
 
 function SignUp() {
   return (
-        <>
-            <GlobalStyle />
-            {/*<Container />*/}
-            <LogoandName />
-            <Signuptitle/>
-            <div className="fixed top-32 right-8 flex justify-end w-[1384px] pb-5">
-                <SignUpForm/>
-            </div>
-      </>
+      <div className="flex flex-wrap align-top w-full">
+          <GlobalStyle/>
+          <div className="bg-blue w-full">
+              <LogoandName/>
+              <Title/>
+          </div>
+          <div className="absolute top-32 right-8 flex justify-end w-full -mt-7">
+              <div className="w-1/2">
+                  <SignUpForm/>
+              </div>
+          </div>
+      </div>
     );
 }
 
