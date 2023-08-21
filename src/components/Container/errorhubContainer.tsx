@@ -44,7 +44,6 @@ const ErrorhubContainer = () => {
                         <div className="pt-8">
                             <div className="pb-2 text-black text-base capitalize">Book Type</div>
                             <TextField
-                                // className=""
                                 sx={{ width: '90%'}}
                                 placeholder="eg. kindle, mobi, pdf, ibook"
                                 variant="outlined"
