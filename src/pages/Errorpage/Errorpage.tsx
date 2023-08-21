@@ -1,7 +1,7 @@
 import React from 'react';
 import { GlobalStyle } from '../../theme/theme';
 import LogoandName from "../../components/LogoandName/LogoandName";
-import MyContainer from "../../components/Container/secondContainer";
+import ErrorhubContainer from "../../components/Container/errorhubContainer";
 import Errorhubtitle from "../../components/Title/Errorhubtitle";
 
 function Errorpage() {
@@ -14,7 +14,7 @@ function Errorpage() {
             </div>
             <div className="absolute top-32 flex justify-center md:w-full -mt-7">
                 <div className="w-1/2">
-                    <MyContainer/>
+                    <ErrorhubContainer/>
                 </div>
             </div>
         </div>

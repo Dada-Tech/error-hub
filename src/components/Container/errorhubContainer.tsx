@@ -3,7 +3,7 @@ import Container from '@mui/material/Container';
 import { Button } from '@mui/material';
 import TextField from '@mui/material/TextField';
 
-const MyContainer = () => {
+const ErrorhubContainer = () => {
     return (
         <Container sx={{width: '70%'}} className="rounded-3xl m-0 mb-0 h-[779px] shadow-md hover:shadow-xl bg-white">
             <div className="pl-4 pr-4">
@@ -90,4 +90,4 @@ const MyContainer = () => {
     );
 };
 
-export default MyContainer;
+export default ErrorhubContainer;
