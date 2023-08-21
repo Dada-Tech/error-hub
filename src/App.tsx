@@ -1,11 +1,11 @@
 import * as React from 'react';
 import { createBrowserRouter } from 'react-router-dom';
-import SignIn from "./pages/SignIn/SignIn";
+import SignUp from "./pages/SignUp/SignUp";
 
 const App = createBrowserRouter([
   {
     path: '/',
-    element: <SignIn/>,
+    element: <SignUp/>,
   },
 ]);
 
