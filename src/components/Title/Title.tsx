@@ -1,5 +1,4 @@
 import React from 'react';
-import classes from './Title.module.scss';
 import sallyImg from "../Images/Saly-1.png";
 
 function Title() {
@@ -13,7 +12,8 @@ function Title() {
                 <div className="text-white text-2xl pb-1">Errorhub</div>
               </div>
               <div>
-                <img className={classes.sallyimg} src={sallyImg} alt="sallyImg"/>
+                {/*<img className={classes.sallyimg} src={sallyImg} alt="sallyImg"/>*/}
+                <img className="absolute top-8 w-96 lg:w-96 md:w-96 sm:w-1/2" src={sallyImg} alt="sallyImg"/>
               </div>
               <div className="Self-stretch grow shrink basis-0 text-[13px] z-10">
                 An application in which users <br/>
