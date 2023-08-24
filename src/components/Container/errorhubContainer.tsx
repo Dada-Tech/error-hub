@@ -1,7 +1,8 @@
 import React from 'react';
 import Container from '@mui/material/Container';
-import { Button } from '@mui/material';
+import {Button} from '@mui/material';
 import TextField from '@mui/material/TextField';
+import {Menu1, Menu2, Menu3, Menu4}from "../Dropdown/Dropdownmenu";
 
 const ErrorhubContainer = () => {
     return (
@@ -41,43 +42,23 @@ const ErrorhubContainer = () => {
                         />
                     </div>
                     <div className="grid grid-cols-2 grid-rows-1 gap-0">
-                        <div className="pt-8">
+                        <div className="pt-8 text-black">
                             <div className="pb-2 text-black text-base capitalize">Book Type</div>
-                            <TextField
-                                sx={{ width: '90%'}}
-                                placeholder="eg. kindle, mobi, pdf, ibook"
-                                variant="outlined"
-                                hiddenLabel
-                            />
+                            <Menu1/>
                         </div>
                         <div className="pt-8">
                             <div className="pb-2 text-black text-base capitalize">Error Type</div>
-                            <TextField
-                                sx={{ width: '100%'}}
-                                placeholder="eg. Spelling, grammar, image"
-                                variant="outlined"
-                                hiddenLabel
-                            />
-                        </div>
+                            <Menu2/>
+                          </div>
                     </div>
                     <div className="grid grid-cols-2 grid-rows-1">
                         <div className="pt-8">
                             <div className="pb-2 text-black text-base capitalize">Chapter</div>
-                            <TextField
-                                sx={{ width: '90%'}}
-                                placeholder="Chapter"
-                                variant="outlined"
-                                hiddenLabel
-                            />
+                            <Menu3/>
                         </div>
                         <div className="pt-8">
                             <div className="pb-2 text-black text-base capitalize">Page Number</div>
-                            <TextField
-                                sx={{ width: '100%'}}
-                                placeholder="Page Number"
-                                variant="outlined"
-                                hiddenLabel
-                            />
+                            <Menu4/>
                         </div>
                     </div>
                 </div>

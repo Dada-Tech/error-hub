@@ -12,8 +12,8 @@ function Errorpage() {
                 <LogoandName/>
                 <Errorhubtitle/>
             </div>
-            <div className="absolute top-32 flex justify-center md:w-full -mt-7">
-                <div className="w-1/2">
+            <div className="md:absolute top-32 flex justify-center md:w-full -mt-7">
+                <div className="md:w-1/2 lg:w-1/2">
                     <ErrorhubContainer/>
                 </div>
             </div>
