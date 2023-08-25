@@ -21,6 +21,7 @@ const ErrorhubContainer = () => {
                             placeholder="To Kill a Mockingbird"
                             variant="outlined"
                             hiddenLabel
+                            disabled // Disable the input field
                         />
                     </div>
                     <div className="pt-4">
@@ -30,6 +31,7 @@ const ErrorhubContainer = () => {
                             placeholder="Harper Lee"
                             variant="outlined"
                             hiddenLabel
+                            disabled // Disable the input field
                         />
                     </div>
                     <div className="pt-4">
@@ -39,6 +41,7 @@ const ErrorhubContainer = () => {
                             placeholder="9780062368683"
                             variant="outlined"
                             hiddenLabel
+                            disabled // Disable the input field
                         />
                     </div>
                     <div className="grid grid-cols-2 grid-rows-1 gap-0">
