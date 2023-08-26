@@ -11,8 +11,8 @@ function Title() {
                 <div className="text-white text-[34px] font-semibold">Welcome to <br/> </div>
                 <div className="text-white text-2xl pb-1">Errorhub</div>
               </div>
-              <div>
-                <img className="absolute top-0 w-96 lg:w-96 md:w-96 sm:w-1/2" src={sallyImg} alt="sallyImg"/>
+              <div className="relative top-0 w-full lg:w-96 lg:-mt-44 lg:-mr-56 sm:w-56 sm:top-12 md:w-96 md:-mt-44 md:-mr-56">
+                <img className="absolute" src={sallyImg} alt="sallyImg"/>
               </div>
               <div className="Self-stretch grow shrink basis-0 text-[13px] z-10">
                 An application in which users <br/>
