@@ -15,7 +15,7 @@ const Menu1 = () => {
                 value={selectedValue}
                 onChange={handleChange}
                 displayEmpty // This prop shows the empty placeholder
-                sx={{ width: '90%'}}
+                sx={{ width: '95%'}}
             >
                 <MenuItem value="" disabled>eg. kindle, mobi, pdf, ibook</MenuItem>
                 <MenuItem value="option1">Kindle</MenuItem>
@@ -39,7 +39,7 @@ const Menu2 = () => {
                 value={selectedValue}
                 onChange={handleChange}
                 displayEmpty // This prop shows the empty placeholder
-                sx={{ width: '90%'}}
+                sx={{ width: '100%'}}
             >
                 <MenuItem value="" disabled>eg. Spelling, grammar, image</MenuItem>
                 <MenuItem value="option4">Spelling</MenuItem>
@@ -63,7 +63,7 @@ const Menu3 = () => {
                 value={selectedValue}
                 onChange={handleChange}
                 displayEmpty // This prop shows the empty placeholder
-                sx={{ width: '90%'}}
+                sx={{ width: '95%'}}
             >
                 <MenuItem value="" disabled>Chapter</MenuItem>
                 <MenuItem value="option7">Chapter 1</MenuItem>
@@ -87,7 +87,7 @@ const Menu4 = () => {
                 value={selectedValue}
                 onChange={handleChange}
                 displayEmpty // This prop shows the empty placeholder
-                sx={{ width: '90%'}}
+                sx={{ width: '100%'}}
             >
                 <MenuItem value="" disabled>Page Number</MenuItem>
                 <MenuItem value="option10">Page 1</MenuItem>
