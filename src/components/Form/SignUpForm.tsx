@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { TextField, Button, Typography } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 
 function SignupForm() {
@@ -13,15 +14,26 @@ function SignupForm() {
     };
 
     return (
-        <form onSubmit={handleSubmit} className='fixed flex flex-row bg-white rounded-[40px] shadow border'>
+        <form onSubmit={handleSubmit} className='lg:fixed flex flex-row bg-white rounded-[40px] shadow border'>
 
-            <div className = "flex flex-col w-[539px] h-[581px] pt-5" >
+            <div className = "flex flex-col w-[539px] h-[581px] pt-5 z-0" >
 
-                <div className="w-[223px] h-8 bg-white flex-col justify-center items-start inline-flex ml-8">
+                <div className="w-[500px] h-8 bg-white flex-row items-start inline-flex ml-8 space-x-32">
                     <div className="text-center">
                         <span className="text-black text-opacity-90 text-[21px] font-normal">Welcome to</span>
                         <span className="text-black text-opacity-90 text-[13px] font-normal"> </span>
                         <span className="text-blue text-opacity-90 text-[21px] font-semibold">ErrorHub</span>
+                       {/* // <Typography className="justify-end text-neutral-400 text-[13px] font-normal">Have an account?<br/></Typography><Typography className="text-sky-500 text-[13px] font-normal">Sign In</Typography> */}
+                    </div>
+
+                    <div className = "flex flex-col">
+                        
+                            <Typography className="text-black/50 text-[13px] font-normal">Have an account?</Typography>
+        
+                            <Typography className="text-blue text-[13px] font-normal">
+                                <Link to = "./pages/SignIn/SignIn"> Sign In </Link>
+                            </Typography>
+                       
                     </div>
                 </div> 
 

@@ -12,10 +12,8 @@ function SignUp() {
               <LogoandName/>
               <Signuptitle/>
           </div>
-          <div className="absolute top-32 right-8 flex justify-end w-full -mt-16">
-              {/* <div className="w-1/2"> */}
-                  <SignUpForm/>
-              {/* </div> */}
+          <div className="w-full lg:absolute lg:top-32 lg:right-8 lg:flex lg:justify-end lg:w-full-mt-16">
+                <SignUpForm/>
           </div>
       </div>
     );
