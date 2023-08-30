@@ -127,7 +127,6 @@ const ErrorhubContainer = ({ selectedBook }: { selectedBook: BookType | null }) 
                         <div className="pt-8 text-black text-base capitalize">chapter number
                             <TextField
                                 type="number"
-                                className="pb-2 text-black capitalize"
                                 sx={{ width: '95%'}}
                                 placeholder="Chapter Number"
                                 variant="outlined"
@@ -138,7 +137,6 @@ const ErrorhubContainer = ({ selectedBook }: { selectedBook: BookType | null }) 
                             <div className="pt-8 text-black text-base capitalize">page number
                             <TextField
                                 type="number"
-                                className="pb-2 text-black"
                                 sx={{ width: '100%'}}
                                 placeholder="Page Number"
                                 variant="outlined"
