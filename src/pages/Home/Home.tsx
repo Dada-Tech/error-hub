@@ -13,7 +13,7 @@ function Home() {
                     <Title/>
                 </div>
                 <div className="flex justify-center w-full -mt-7">
-                    <div className="w-1/2">
+                    <div className="w-full md:w-1/2 lg:w-1/2 sm:w-full">
                         <Searchbar/>
                     </div>
                 </div>
