@@ -25,7 +25,7 @@ export function Searchbar ({ onSelectBook }) {
     const [inputValue, setInputValue] = useState('');
     const [suggestions, setSuggestions] = useState<BookType[]>([]);
 
-    const [selectedBook, setSelectedBook] = useState<BookType | null>(null);
+    const [, setSelectedBook] = useState<BookType | null>(null);
 
     const handleBookSelect = (event: React.SyntheticEvent, book: BookType | null) => {
         setSelectedBook(book);
