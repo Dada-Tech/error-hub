@@ -21,6 +21,7 @@ const Menu1 = () => {
                 <MenuItem value="option1">Kindle</MenuItem>
                 <MenuItem value="option2">Mobi</MenuItem>
                 <MenuItem value="option3">iBook</MenuItem>
+                <MenuItem value="option4">PDF</MenuItem>
             </Select>
         </div>
     );
@@ -42,9 +43,9 @@ const Menu2 = () => {
                 sx={{ width: '100%'}}
             >
                 <MenuItem value="" disabled>eg. Spelling, grammar, image</MenuItem>
-                <MenuItem value="option4">Spelling</MenuItem>
-                <MenuItem value="option5">Grammar</MenuItem>
-                <MenuItem value="option6">Image</MenuItem>
+                <MenuItem value="option5">Spelling</MenuItem>
+                <MenuItem value="option6">Grammar</MenuItem>
+                <MenuItem value="option7">Image</MenuItem>
             </Select>
         </div>
     );
