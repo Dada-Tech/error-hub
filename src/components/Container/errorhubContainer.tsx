@@ -92,7 +92,7 @@ const ErrorhubContainer = ({ selectedBook }: { selectedBook: BookType | null }) 
                         />
                     </div>
                     <div className="pt-4">
-                        <div className="pb-2 text-black text-base capitalize">Author(s)</div>
+                        <div className="pb-2 text-black text-base">Author(s)</div>
                         <TextField
                             sx={{ width: '100%'}}
                             placeholder="Author"
