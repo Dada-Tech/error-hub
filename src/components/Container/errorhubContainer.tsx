@@ -115,16 +115,16 @@ const ErrorhubContainer = ({ selectedBook }: { selectedBook: BookType | null }) 
                     </div>
                     <div className="grid grid-cols-2 grid-rows-1 gap-0">
                         <div className="pt-8 text-black">
-                            <div className="pb-2 text-black text-base capitalize">Book Type</div>
+                            <div className="pb-2 text-black text-base capitalize">book type</div>
                             <Menu1/>
                         </div>
                         <div className="pt-8">
-                            <div className="pb-2 text-black text-base capitalize">Error Type</div>
+                            <div className="pb-2 text-black text-base capitalize">error type</div>
                             <Menu2/>
                           </div>
                     </div>
                     <div className="grid grid-cols-2 grid-rows-1">
-                        <div className="pt-8">
+                        <div className="pt-8 text-black text-base capitalize">chapter number
                             <TextField
                                 type="number"
                                 className="pb-2 text-black capitalize"
@@ -135,7 +135,7 @@ const ErrorhubContainer = ({ selectedBook }: { selectedBook: BookType | null }) 
                                 hiddenLabel
                             >Chapter</TextField>
                         </div>
-                        <div className="pt-8">
+                            <div className="pt-8 text-black text-base capitalize">page number
                             <TextField
                                 type="number"
                                 className="pb-2 text-black"
@@ -148,7 +148,7 @@ const ErrorhubContainer = ({ selectedBook }: { selectedBook: BookType | null }) 
                         </div>
                     </div>
                 </div>
-                <div className="pt-8">
+                <div className="pt-12">
                     <Button variant="contained" sx={{ width: '100%'}} color="primary" className="h-[54px] bg-sky-500 rounded-2xl shadow uppercase bg-lightBlue"> upload </Button>
                 </div>
             </div>
