@@ -8,10 +8,35 @@ function SignupForm() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [phoneNumber, setPhoneNumber] = useState('');
+    const [isValidEmail, setIsValidEmail] = useState(false);
+    const [isValidPhoneNumber, setIsValidPhoneNumber] = useState(false);
+
+
+    function handleEmailChange(event: React.ChangeEvent<HTMLInputElement>) {
+        const inputEmail = event.target.value;
+        setEmail(inputEmail);
+      
+        // Regular expression to check email validity
+        const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+      
+        setIsValidEmail(emailPattern.test(inputEmail));
+      }
+
+      function handlePhoneNumberChange(event: React.ChangeEvent<HTMLInputElement>) {
+        const inputPhoneNumber = event.target.value;
+        setPhoneNumber(inputPhoneNumber);
+      
+        // Regular expression to check phone number validity
+        const phoneNumberPattern = /^\d{3}-\d{3}-\d{4}$/;
+
+        setIsValidPhoneNumber(phoneNumberPattern.test(inputPhoneNumber));
+      }
+      
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
     };
+    
 
     return (
         <form onSubmit={handleSubmit} className='lg:fixed flex flex-row bg-white rounded-[40px] shadow border'>
@@ -54,7 +79,7 @@ function SignupForm() {
                         type="email"
                         placeholder="Email Address"
                         value={email}
-                        onChange={(e) => setEmail(e.target.value)} />
+                        onChange={handleEmailChange} />
                 </div>
                         
                 <div className = "flex flex-row space-x-44 mt-8 px-8">
@@ -80,7 +105,7 @@ function SignupForm() {
                         type="tel"
                         placeholder="Phone Number"
                         value={phoneNumber}
-                        onChange={(e) => setPhoneNumber(e.target.value)} />          
+                        onChange={handlePhoneNumberChange} />          
                 </div>
 
                 <div className = "mt-8">
@@ -94,14 +119,15 @@ function SignupForm() {
                             type="password"
                             placeholder="Password"
                             value={password}
-                            onChange={(e) => setPassword(e.target.value)} />
-                    
+                            onChange={(e) => setPassword(e.target.value)} />                                        
                 </div>
 
 
                 
                 <div className = "flex justify-center mt-12 px-8">
-                    <Button variant="contained" type = "submit" className="py-4 px-8 text-primary-contrast font-poppins text-16 font-normal text-normal capitalize flex-grow"> Sign Up
+
+                    
+                    <Button variant="contained" type = "submit" disabled={!isValidEmail && isValidPhoneNumber} className="py-4 px-8 text-primary-contrast font-poppins text-16 font-normal text-normal capitalize flex-grow"> Sign Up
                     </Button>
                 </div>
 
