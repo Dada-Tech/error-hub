@@ -10,6 +10,7 @@ function SignupForm() {
     const [phoneNumber, setPhoneNumber] = useState('');
     const [isValidEmail, setIsValidEmail] = useState(false);
     const [isValidPhoneNumber, setIsValidPhoneNumber] = useState(false);
+    const [dirty, setDirty] = useState(false);
 
 
     function handleEmailChange(event: React.ChangeEvent<HTMLInputElement>) {
@@ -76,8 +77,10 @@ function SignupForm() {
 
                 <div className = "flex px-8">
                     <TextField className = "flex flex-grow"
+                        error={dirty && !isValidEmail}              
+                        onBlur={() => setDirty(true)}
                         type="email"
-                        placeholder="Email Address"
+                        placeholder="example@domain.com"
                         value={email}
                         onChange={handleEmailChange} />
                 </div>
@@ -102,8 +105,10 @@ function SignupForm() {
                         onChange={(e) => setName(e.target.value)} />
 
                     <TextField className = "flex flex-grow"
+                        error={dirty && !isValidPhoneNumber}              
+                        onBlur={() => setDirty(true)}
                         type="tel"
-                        placeholder="Phone Number"
+                        placeholder="555-555-5555"
                         value={phoneNumber}
                         onChange={handlePhoneNumberChange} />          
                 </div>
@@ -124,10 +129,11 @@ function SignupForm() {
 
 
                 
-                <div className = "flex justify-center mt-12 px-8">
-
-                    
-                    <Button variant="contained" type = "submit" disabled={!isValidEmail && isValidPhoneNumber} className="py-4 px-8 text-primary-contrast font-poppins text-16 font-normal text-normal capitalize flex-grow"> Sign Up
+                <div className = "flex justify-center mt-12 px-8">                    
+                    <Button variant="contained" 
+                        type = "submit" 
+                        disabled={!isValidEmail || !isValidPhoneNumber} 
+                        className="py-4 px-8 text-primary-contrast font-poppins text-16 font-normal text-normal capitalize flex-grow"> Sign Up
                     </Button>
                 </div>
 
