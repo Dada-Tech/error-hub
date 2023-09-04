@@ -72,7 +72,8 @@ export function Searchbar ({ onSelectBook }) {
 
 const ErrorhubContainer = ({ selectedBook }: { selectedBook: BookType | null }) => {
     return (
-        <Container sx={{width: '70%'}} className="rounded-3xl m-0 mb-0 h-[779px] shadow-md hover:shadow-xl bg-white">
+        <Container  className="rounded-3xl m-0 mb-0 h-[779px] shadow-md hover:shadow-xl bg-white">
+            {/*sx={{width: '70%'}}*/}
             <div className="pl-4 pr-4">
                 <div className="">
                     <div className="text-black text-[21px] pt-8">

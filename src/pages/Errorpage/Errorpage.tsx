@@ -25,7 +25,7 @@ function Errorpage() {
                 </div>
             </div>
             <div className="md:absolute top-32 flex justify-center md:w-full -mt-7">
-                <div className="md:w-1/2 lg:w-1/2">
+                <div className="w-11/12 sm:w-11/12 md:w-1/2 lg:w-1/3">
                     <ErrorhubContainer selectedBook={selectedBook}/>
                 </div>
             </div>
